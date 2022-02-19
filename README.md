@@ -1,5 +1,8 @@
 # Additional features of UnifiedPOS version 1.15 to be added to POS for.NET 1.14.1
 
+- Added constants definition for TransitionEvent event for ElectronicValueReader/Writer device.  
+- Migrated to Visual Studio 2022 and .NET Framework 4.8.  
+
 This is an extended DLL that supports interfaces and definitions to add additional features of UnifiedPOS version 1.15 to POS for.NET 1.14.1.
 
 - Added CAT device functions to ElectronicValueReader/Writer device.  
@@ -11,8 +14,8 @@ This is an extended DLL that supports interfaces and definitions to add addition
 
 To develop and run this program, service object, or application, you need:
 
-- Visual Studio 2019 or Visual Studio Community 2019  version 16.6.1 (development only)  
-- .NET framework 4.0 or later  
+- Visual Studio 2022 or Visual Studio Community 2022  version 17.1.0 (development only)  
+- .NET framework 4.8  
 - Microsoft Point of Service for .NET v1.14.1 (POS for.NET) : https://www.microsoft.com/en-us/download/details.aspx?id=55758  
 
 ## Install/Uninstall
@@ -31,6 +34,9 @@ Since the following batch files are prepared, please execute them as an administ
   - FiscalCountryCode115 : Germany added
   - FiscalDateType115 : TicketStart,TicketEnd added
   - ServiceType115 : Cat added
+
+- transition constants definition
+  - IElectronicValueRW115Constants
 
 - interface definition
   - IElectronicValueRW115

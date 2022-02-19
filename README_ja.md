@@ -1,5 +1,8 @@
 # POS for.NET 1.14.1 に付加する UnifiedPOS version 1.15 の追加機能
 
+- ElectronicValueReader/WriterデバイスのTransitionEventイベントの定数定義を追加  
+- Visual Studio 2022と.NET Framework 4.8に移行した。  
+
 これは UnifiedPOS version 1.15 の追加機能を POS for.NET 1.14.1 に付加するためのインタフェースや定義をサポートした拡張DLLです。
 
 - ElectronicValueReader/WriterデバイスへCATデバイス機能を追加  
@@ -11,8 +14,8 @@
 
 このプログラムやサービスオブジェクト、アプリケーションの開発および実行には以下が必要です。
 
-- Visual Studio 2019またはVisual Studio Community 2019 version 16.6.1 (開発のみ)  
-- .NET framework 4.0以降  
+- Visual Studio 2022またはVisual Studio Community 2022 version 17.1.0 (開発のみ)  
+- .NET framework 4.8  
 - Microsoft Point of Service for .NET v1.14.1 (POS for.NET) : https://www.microsoft.com/en-us/download/details.aspx?id=55758  
 
 
@@ -32,6 +35,9 @@
   - FiscalCountryCode115 : Germany追加
   - FiscalDateType115 : TicketStart,TicketEnd追加
   - ServiceType115 : Cat追加
+
+- transition定数定義
+  - IElectronicValueRW115Constants
 
 - インタフェース定義
   - IElectronicValueRW115

@@ -1,7 +1,8 @@
 ﻿/* IElectronicValueRW115.cs UnifiedPOS ElectronicValueRW Extension Interface for POS for.NET 1.14.1
   version 1.15.0.0 June 2nd, 2020
+  version 1.15.0.0 Feb. 19th, 2022
 
-  Copyright (C) 2020 Kunio Fukuchi
+  Copyright (C) 2020-2022 Kunio Fukuchi
 
   This software is provided 'as-is', without any express or implied
   warranty.  In no event will the authors be held liable for any damages
@@ -34,6 +35,15 @@ namespace OpenPOS.Extension
         Voucher,
         Membership,
         Cat
+    }
+
+    public static class IElectronicValueRW115Constants
+    {
+        public const int TransitionConfirmSearchTable = 24;
+        public const int TransitionConfirmPaymentCondition = 25;
+        public const int TransitionConfirmAuthorize = 26;
+        public const int TransitionNotifyCheckCard = 27;
+        public const int TransitionNotifySelectPaymentCondition = 28;
     }
 
     public interface IElectronicValueRW115
